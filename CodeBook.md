@@ -1,6 +1,6 @@
 # Human Activity Recognition Using Smartphones Dataset: CodeBook for a tidy data set
 
-(Taken from the original data description)
+
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -10,23 +10,26 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+(Taken from the original data description)
+
 
 # Data
 The data provided in the file `2nd_tidy_data.txt` was created by using transformations in the end of this note, these transformations is written by `R` language and provided in the file `2nd_tidy_data.txt`. The data is provided in a `data.frame` format with `68` variables describing the values conducted by the research.
 
 # Varibales
 1. `activity`: contains 6 types of activity
-. WALKING
-. WALKING_UPSTAIRS
-. WALKING_DOWNSTAIRS
-. SITTING
-. STANDING
-. LAYING
+. `WALKING`
+. `WALKING_UPSTAIRS`
+. `WALKING_DOWNSTAIRS`
+. `SITTING`
+. `STANDING`
+. `LAYING`
 
 2. `subject`: containing 30 indexed persons who performed the activities and measured
 
 3. Measurements: there 66 measurements 
- [3] "tBodyAcc-mean()-X"           "tBodyAcc-mean()-Y"          
+
+ `[3] "tBodyAcc-mean()-X"           "tBodyAcc-mean()-Y"          
  [5] "tBodyAcc-mean()-Z"           "tBodyAcc-std()-X"           
  [7] "tBodyAcc-std()-Y"            "tBodyAcc-std()-Z"           
  [9] "tGravityAcc-mean()-X"        "tGravityAcc-mean()-Y"       
@@ -58,7 +61,7 @@ The data provided in the file `2nd_tidy_data.txt` was created by using transform
 [61] "fBodyAccMag-mean()"          "fBodyAccMag-std()"          
 [63] "fBodyBodyAccJerkMag-mean()"  "fBodyBodyAccJerkMag-std()"  
 [65] "fBodyBodyGyroMag-mean()"     "fBodyBodyGyroMag-std()"     
-[67] "fBodyBodyGyroJerkMag-mean()" "fBodyBodyGyroJerkMag-std()" 
+[67] "fBodyBodyGyroJerkMag-mean()" "fBodyBodyGyroJerkMag-std()" `
 
 # Transformations
 Tidying the date set by following 6 steps
